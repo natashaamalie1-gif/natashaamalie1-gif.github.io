@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natasha amalie — Security Engineering & Architecture</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deepBurgundy: '#1a050b',
+                        cardBurgundy: '#2a0a12',
+                        burgundyBorder: '#4a1523',
+                        roseGold: '#e8b4b8',
+                        goldAccent: '#dfa375',
+                        crimsonGlow: '#800020'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #1a050b; color: #fceee9; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .glow-card { transition: all 0.3s ease; }
+        .glow-card:hover { 
+            box-shadow: 0 0 25px rgba(128, 0, 32, 0.4); 
+            border-color: rgba(232, 180, 184, 0.6);
+            transform: translateY(-2px);
+        }
+        .burgundy-gradient {
+            background: linear-gradient(135deg, #1a050b 0%, #320d17 50%, #1a050b 100%);
+        }
+    </style>
+</head>
+<body class="burgundy-gradient text-gray-100 antialiased selection:bg-roseGold selection:text-black">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 w-full z-50 bg-deepBurgundy/90 backdrop-blur-md border-b border-burgundyBorder">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="mono font-bold text-roseGold tracking-wider text-sm">~/Natasha-portfolio</span>
+            <div class="hidden md:flex space-x-8 text-xs text-roseGold/70 mono">
+                <a href="#focus" class="hover:text-roseGold transition">01. FOCUS</a>
+                <a href="#metrics" class="hover:text-roseGold transition">02. METRICS</a>
+                <a href="#perspective" class="hover:text-roseGold transition">03. PERSPECTIVE</a>
+                <a href="#contact" class="hover:text-roseGold transition">04. CONTACT</a>
+            </div>
+            <a href="#contact" class="px-4 py-2 text-xs mono font-bold bg-roseGold text-deepBurgundy rounded hover:bg-white transition">CONNECT</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="pt-36 pb-24 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <div class="inline-block px-3 py-1 mb-6 text-xs mono text-goldAccent bg-goldAccent/10 border border-goldAccent/30 rounded-full">
+                CYBER SECURITY STUDENT & DEFENDER
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-none mb-6 text-white">
+                DEFENDING SYSTEMS. <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-roseGold via-goldAccent to-roseGold">ENGINEERING TRUST.</span>
+            </h1>
+            <p class="text-roseGold/80 text-lg mb-8 max-w-xl font-light">
+                Specializing in vulnerability assessment, cloud infrastructure security, and offensive security research with a precision-first mindset.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#focus" class="px-6 py-3 bg-roseGold text-deepBurgundy font-semibold rounded text-sm hover:bg-white transition">Core Expertise</a>
+                <a href="https://github.com/natashaamalie1-gif" target="_blank" class="px-6 py-3 border border-burgundyBorder text-roseGold font-semibold rounded text-sm hover:border-roseGold transition">GitHub Repositories</a>
+            </div>
+          
+        </div>
+        
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-crimsonGlow to-roseGold rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+            <div class="relative bg-cardBurgundy border border-burgundyBorder p-8 rounded-2xl">
+                <div class="mono text-xs text-goldAccent mb-2">// EXECUTION_MANIFEST</div>
+                <h3 class="text-xl font-bold mb-4 text-white">Operational Ethos</h3>
+                <p class="text-roseGold/80 text-sm leading-relaxed mb-6 font-light">
+                    "Security is not a static layer—it is an evolving practice. Building secure architectures requires deep domain mastery, rigorous testing, and continuous threat modeling."
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-center mono text-xs">
+                    <div class="bg-deepBurgundy/80 p-3 rounded border border-burgundyBorder">
+                        <span class="block text-roseGold text-lg font-bold">100%</span> Code Audit Focus
+                    </div>
+                    <div class="bg-deepBurgundy/80 p-3 rounded border border-burgundyBorder">
+                        <span class="block text-goldAccent text-lg font-bold">Zero</span> Compromise
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FOCUS AREAS SECTION -->
+    <section id="focus" class="py-20 px-6 max-w-7xl mx-auto border-t border-burgundyBorder/60">
+        <div class="mb-12">
+            <span class="text-goldAccent mono text-xs tracking-widest">// DOMAIN EXPERTISE</span>
+            <h2 class="text-3xl font-extrabold mt-2 text-white">WHERE I FOCUSED.</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-cardBurgundy border border-burgundyBorder p-6 rounded-xl glow-card">
+                <span class="text-xs mono text-roseGold">01 / OFFENSIVE</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 text-white">Application Security Testing</h3>
+                <p class="text-roseGold/70 text-sm font-light">Conducting vulnerability analysis, code reviews, and threat modeling across modern web and API ecosystems.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-cardBurgundy border border-burgundyBorder p-6 rounded-xl glow-card">
+                <span class="text-xs mono text-roseGold">02 / DEFENSIVE</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 text-white">Cloud Architecture & SIEM</h3>
+                <p class="text-roseGold/70 text-sm font-light">Designing secure cloud environments, configuring monitoring rules, and analyzing event logs for anomalies.</p>
+            </div>
+            </section>
+
+    <!-- METRICS SECTION -->
+    <section id="metrics" class="py-20 px-6 max-w-7xl mx-auto border-t border-burgundyBorder/60">
+        <div class="mb-12">
+            <span class="text-goldAccent mono text-xs tracking-widest">// TRACK RECORD</span>
+            <h2 class="text-3xl font-extrabold mt-2 text-white">KEY MILESTONES.</h2>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-cardBurgundy border border-burgundyBorder p-6 rounded-xl text-center">
+                <span class="text-4xl font-black text-roseGold mono">05+</span>
+                <p class="text-roseGold/70 text-xs mt-2 mono">Certifications Earned</p>
+            </div>
+            <div class="bg-cardBurgundy border border-burgundyBorder p-6 rounded-xl text-center">
+                <span class="text-4xl font-black text-goldAccent mono">60+</span>
+                <p class="text-roseGold/70 text-xs mt-2 mono">CTF Challenges Solved</p>
+            </div>
+            <div class="bg-cardBurgundy border border-burgundyBorder p-6 rounded-xl text-center">
+                <span class="text-4xl font-black text-roseGold mono">Top 5%</span>
+                <p class="text-roseGold/70 text-xs mt-2 mono">Rank on Cyber Platforms</p>
+            </div>
+            <div class="bg-cardBurgundy border border-burgundyBorder p-6 rounded-xl text-center">
+                <span class="text-4xl font-black text-goldAccent mono">10+</span>
+                <p class="text-roseGold/70 text-xs mt-2 mono">Custom Security Scripts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSPECTIVE SECTION -->
+    <section id="perspective" class="py-20 px-6 max-w-7xl mx-auto border-t border-burgundyBorder/60">
+        <div class="mb-12">
+            <span class="text-goldAccent mono text-xs tracking-widest">// INSIGHTS</span>
+            <h2 class="text-3xl font-extrabold mt-2 text-white">PERSPECTIVES & APPROACH.</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="bg-cardBurgundy border border-burgundyBorder p-6 rounded-xl">
+                <h4 class="text-roseGold mono font-bold mb-2 text-sm">01. Continuous Learning</h4>
+                <p class="text-roseGold/80 text-sm leading-relaxed font-light">Cybersecurity changes daily. I maintain a disciplined routine of labs, vulnerability research, and technical writeups.</p>
+            </div>
+            <div class="bg-cardBurgundy border border-burgundyBorder p-6 rounded-xl">
+                <h4 class="text-roseGold mono font-bold mb-2 text-sm">02. Pragmatic Defense</h4>
+                <p class="text-roseGold/80 text-sm leading-relaxed font-light">Security should enable innovation, not slow it down. I focus on building clear, scalable security controls.</p>
+            </div>
+            <div class="bg-cardBurgundy border border-burgundyBorder p-6 rounded-xl">
+                <h4 class="text-roseGold mono font-bold mb-2 text-sm">03. Goal Orientation</h4>
+                <p class="text-roseGold/80 text-sm leading-relaxed font-light">Aiming to contribute to high-impact security operations center (SOC) teams and enterprise threat research.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / FOOTER SECTION (THIS WAS CUT OFF BEFORE, LINES 150 - 177) -->
+    <footer id="contact" class="py-24 px-6 max-w-7xl mx-auto border-t border-burgundyBorder/60 text-center">
+        <span class="text-goldAccent mono text-xs tracking-widest">// GET IN TOUCH</span>
+        <h2 class="text-4xl lg:text-5xl font-extrabold mt-3 mb-6 text-white">LET'S CONNECT.</h2>
+        <p class="text-roseGold/70 max-w-md mx-auto mb-8 text-sm font-light">Open for cybersecurity opportunities, internships, and security research collaborations.</p>
+        
+        <!-- EDIT YOUR EMAIL HERE -->
+        <a href="mailto:natashaamalie15@gmail.com" class="text-2xl lg:text-4xl font-bold text-roseGold hover:text-white transition mono break-all">your.email@example.com</a>
+        
+        <!-- EDIT YOUR SOCIAL LINKS HERE -->
+        <div class="flex justify-center space-x-8 mt-12 text-xs mono text-roseGold/70">
+            <a href="https://www.linkedin.com/in/natasha-amalie-a77616419?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="hover:text-roseGold transition">LinkedIn</a>
+            <a href="https://github.com/natashaamalie1-gif" target="_blank" class="hover:text-roseGold transition">GitHub</a>
+            <a href="https://www.instagram.com/spxm_nash?rpxt=ZGR4OXh1OHFsNWhi" target="_blank" class="hover:text-roseGold transition">Instagram / </a>
+        </div>
+        
+        <!-- EDIT YOUR NAME HERE -->
+        <p class="text-xs text-roseGold/40 mono mt-10">© 2026 J.M Natasha amalie. Designed with Deep Burgundy Theme & Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
